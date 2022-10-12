@@ -1,0 +1,413 @@
+hydra:
+  run:
+    dir: ./
+
+cabinet:
+  urdf_path: "objects/cabinet/cabinet_0004.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [1.0, 0.0, 0.45]
+  base_orientation: [0.0, 0.0, 1.0, 0.0]
+  global_scaling: 1.0
+
+
+mug1:
+  urdf_path: "objects/train/mug1/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [1.05, 0.0, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.15
+
+mug2:
+  urdf_path: "objects/train/mug2/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.15
+
+mug3:
+  urdf_path: "objects/train/mug3/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.15
+
+bottle1:
+  urdf_path: "objects/train/bottle1/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+bottle2:
+  urdf_path: "objects/train/bottle2/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+bottle3:
+  urdf_path: "objects/train/bottle3/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+# bottle_paper:
+#   urdf_path: "objects/train/bottle_paper/model.urdf"
+#   # base_position: [0.60, 0.40, 0.02]
+#   base_position: [0.90, -0.20, 0.65]
+#   base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+#   global_scaling: 0.02
+
+
+bowl1:
+  urdf_path: "objects/train/bowl1/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+bowl2:
+  urdf_path: "objects/train/bowl2/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+bowl3:
+  urdf_path: "objects/train/bowl3/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+bowl4:
+  urdf_path: "objects/train/bowl4/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.65]
+  base_orientation: [ 0, 0.7071068, 0, 0.7071068 ]
+  global_scaling: 0.20
+
+mustard:
+  urdf_path: "objects/ycb/006_mustard_bottle/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [1.0, -0.2, 1.0]
+  global_scaling: 1.0
+
+crackers:
+  urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.57]
+  global_scaling: 1.0
+
+mug:
+  urdf_path: "objects/ycb/025_mug/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.57]
+  base_orientation: [ 0, 0, 0.7071068, 0.7071068 ]
+  global_scaling: 1.0
+
+tuna:
+  urdf_path: "objects/ycb/007_tuna_fish_can/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.57]
+  base_orientation: [ 0.7071068, 0, 0, 0.7071068 ]
+  global_scaling: 1.0
+
+bowl:
+  urdf_path: "objects/ycb/024_bowl/model.urdf"
+  # base_position: [0.60, 0.40, 0.02]
+  base_position: [0.90, -0.20, 0.57]
+  base_orientation: [ 0,0,0,1 ]
+  global_scaling: 1.0
+
+scene1:
+  obs1:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.05, 0.35, 0.57]
+    base_orientation: [ 0.7071068, 0, 0, 0.7071068 ]
+    global_scaling: 1.0
+
+  obs2:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.05, 0.35, 0.67]
+    base_orientation: [ 0.7071068, 0, 0, 0.7071068 ]
+    global_scaling: 1.0
+
+  obs3:
+    name: "tomato_soup"
+    urdf_path: "objects/ycb/005_tomato_soup_can/model.urdf"
+    collision_path: "objects/ycb/005_tomato_soup_can/textured_simple_vhacd.obj"
+    bbox: (-0.03455499932169914, 0.03416299819946289, -0.0326710008084774, 0.03604799881577492, -0.059675998985767365, 0.043049998581409454)
+    base_position: [1.05, -0.40, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs4:
+    name: "tomato_soup"
+    urdf_path: "objects/ycb/005_tomato_soup_can/model.urdf"
+    collision_path: "objects/ycb/005_tomato_soup_can/textured_simple_vhacd.obj"
+    bbox: (-0.03455499932169914, 0.03416299819946289, -0.0326710008084774, 0.03604799881577492, -0.059675998985767365, 0.043049998581409454)
+    base_position: [0.93, -0.40, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs5:
+    name: "pitcher"
+    urdf_path: "objects/ycb/019_pitcher_base/model.urdf"
+    collision_path: "objects/ycb/019_pitcher_base/textured_simple_vhacd.obj"
+    bbox: (-0.0804319977760315, 0.0693110004067421, -0.07924900203943253, 0.06632100045681, -0.14770899713039398, 0.09631700068712234)
+    base_position: [1.05, 0.05, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs6:
+    name: "sugar"
+    urdf_path: "objects/ycb/004_sugar_box/model.urdf"
+    collision_path: "objects/ycb/004_sugar_box/textured_simple_vhacd.obj"
+    bbox: (-0.024365000426769257, 0.026173999533057213, -0.04887399822473526, 0.046105001121759415, -0.0928020030260086, 0.08408500254154205)
+    base_position: [0.95, 0.15, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs7:
+    name: "sugar"
+    urdf_path: "objects/ycb/004_sugar_box/model.urdf"
+    collision_path: "objects/ycb/004_sugar_box/textured_simple_vhacd.obj"
+    bbox: (-0.024365000426769257, 0.026173999533057213, -0.04887399822473526, 0.046105001121759415, -0.0928020030260086, 0.08408500254154205)
+    base_position: [0.98, -0.15, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+
+
+scene2:
+  obs1:
+    name: "mug"
+    urdf_path: "objects/ycb/025_mug/model.urdf"
+    collision_path: "objects/ycb/025_mug/textured_simple_vhacd.obj"
+    bbox: (-0.050508998334407806, 0.06704799830913544, -0.04622099921107292, 0.04758699983358383, -0.03929999843239784, 0.042635999619960785)
+    base_position: [1.1, 0.40, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs2:
+    name: "mug"
+    urdf_path: "objects/ycb/025_mug/model.urdf"
+    collision_path: "objects/ycb/025_mug/textured_simple_vhacd.obj"
+    bbox: (-0.050508998334407806, 0.06704799830913544, -0.04622099921107292, 0.04758699983358383, -0.03929999843239784, 0.042635999619960785)
+    base_position: [0.96, 0.40, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs3:
+    name: "bowl"
+    urdf_path: "objects/ycb/024_bowl/model.urdf"
+    collision_path: "objects/ycb/024_bowl/textured_simple_vhacd.obj"
+    bbox: (-0.08075500279664993, 0.0812389999628067, -0.0819069966673851, 0.07953400164842606, -0.024745000526309013, 0.030717000365257263)
+    base_position: [1.0, 0.25, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs4:
+    name: "bowl"
+    urdf_path: "objects/ycb/024_bowl/model.urdf"
+    collision_path: "objects/ycb/024_bowl/textured_simple_vhacd.obj"
+    bbox: (-0.08075500279664993, 0.0812389999628067, -0.0819069966673851, 0.07953400164842606, -0.024745000526309013, 0.030717000365257263)
+    base_position: [0.91, -0.22, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+  
+  obs5:
+    name: "pitcher"
+    urdf_path: "objects/ycb/019_pitcher_base/model.urdf"
+    collision_path: "objects/ycb/019_pitcher_base/textured_simple_vhacd.obj"
+    bbox: (-0.0804319977760315, 0.0693110004067421, -0.07924900203943253, 0.06632100045681, -0.14770899713039398, 0.09631700068712234)
+    base_position: [1.05, -0.40, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs6:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.0, -0.05, 0.57]
+    base_orientation: [ 0, 0, 0.3826834, 0.9238795 ]
+    global_scaling: 1.0
+  
+  obs7:
+    name: "sugar"
+    urdf_path: "objects/ycb/004_sugar_box/model.urdf"
+    collision_path: "objects/ycb/004_sugar_box/textured_simple_vhacd.obj"
+    bbox: (-0.024365000426769257, 0.026173999533057213, -0.04887399822473526, 0.046105001121759415, -0.0928020030260086, 0.08408500254154205)
+    base_position: [0.98, 0.05, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+
+scene3:
+  obs1:
+    name: "mug"
+    urdf_path: "objects/ycb/025_mug/model.urdf"
+    collision_path: "objects/ycb/025_mug/textured_simple_vhacd.obj"
+    bbox: (-0.050508998334407806, 0.06704799830913544, -0.04622099921107292, 0.04758699983358383, -0.03929999843239784, 0.042635999619960785)
+    base_position: [1.1, 0.0, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs2:
+    name: "bowl"
+    urdf_path: "objects/ycb/024_bowl/model.urdf"
+    collision_path: "objects/ycb/024_bowl/textured_simple_vhacd.obj"
+    bbox: (-0.08075500279664993, 0.0812389999628067, -0.0819069966673851, 0.07953400164842606, -0.024745000526309013, 0.030717000365257263)
+    base_position: [1.0, 0.13, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs3:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.0, -0.35, 0.57]
+    base_orientation: [ 0, 0, 0.3826834, 0.9238795 ]
+    global_scaling: 1.0
+
+  obs4:
+    name: "tomato_soup"
+    urdf_path: "objects/ycb/005_tomato_soup_can/model.urdf"
+    collision_path: "objects/ycb/005_tomato_soup_can/textured_simple_vhacd.obj"
+    bbox: (-0.03455499932169914, 0.03416299819946289, -0.0326710008084774, 0.03604799881577492, -0.059675998985767365, 0.043049998581409454)
+    base_position: [1.13, 0.45, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+  
+  obs5:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [0.98, -0.15, 0.57]
+    base_orientation: [ 0, 0, 0.3826834, 0.9238795 ]
+    global_scaling: 1.0
+  
+  obs6:
+    name: "pitcher"
+    urdf_path: "objects/ycb/019_pitcher_base/model.urdf"
+    collision_path: "objects/ycb/019_pitcher_base/textured_simple_vhacd.obj"
+    bbox: (-0.0804319977760315, 0.0693110004067421, -0.07924900203943253, 0.06632100045681, -0.14770899713039398, 0.09631700068712234)
+    base_position: [1.0, 0.28, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+  
+  obs7:
+    name: "sugar"
+    urdf_path: "objects/ycb/004_sugar_box/model.urdf"
+    collision_path: "objects/ycb/004_sugar_box/textured_simple_vhacd.obj"
+    bbox: (-0.024365000426769257, 0.026173999533057213, -0.04887399822473526, 0.046105001121759415, -0.0928020030260086, 0.08408500254154205)
+    base_position: [0.98, 0.35, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+
+scene4:
+  obs1:  
+    name: "bowl"
+    urdf_path: "objects/ycb/024_bowl/model.urdf"
+    collision_path: "objects/ycb/024_bowl/textured_simple_vhacd.obj"
+    bbox: (-0.08075500279664993, 0.0812389999628067, -0.0819069966673851, 0.07953400164842606, -0.024745000526309013, 0.030717000365257263)
+    base_position: [1.0, 0.3, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs2:
+    name: "tomato_soup"
+    urdf_path: "objects/ycb/005_tomato_soup_can/model.urdf"
+    collision_path: "objects/ycb/005_tomato_soup_can/textured_simple_vhacd.obj"
+    bbox: (-0.03455499932169914, 0.03416299819946289, -0.0326710008084774, 0.03604799881577492, -0.059675998985767365, 0.043049998581409454)
+    base_position: [0.95, 0.0, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs3:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.0, -0.35, 0.57]
+    base_orientation: [ 0.7240368, 0.4469983, 0.4469983, 0.2759632 ]
+    global_scaling: 1.0
+  
+  obs4:
+    name: "tomato_soup"
+    urdf_path: "objects/ycb/005_tomato_soup_can/model.urdf"
+    collision_path: "objects/ycb/005_tomato_soup_can/textured_simple_vhacd.obj"
+    bbox: (-0.03455499932169914, 0.03416299819946289, -0.0326710008084774, 0.03604799881577492, -0.059675998985767365, 0.043049998581409454)
+    base_position: [1.13, 0.45, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+  obs5:
+    name: "crackers"
+    urdf_path: "objects/ycb/003_cracker_box/model.urdf"
+    collision_path: "objects/ycb/003_cracker_box/textured_simple_vhacd.obj"
+    bbox: (-0.03708900138735771, 0.03624200075864792, -0.08434399962425232, 0.08068300038576126, -0.11223500221967697, 0.10256200283765793)
+    base_position: [1.0, -0.17, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+  
+  obs6:
+    name: "pitcher"
+    urdf_path: "objects/ycb/019_pitcher_base/model.urdf"
+    collision_path: "objects/ycb/019_pitcher_base/textured_simple_vhacd.obj"
+    bbox: (-0.0804319977760315, 0.0693110004067421, -0.07924900203943253, 0.06632100045681, -0.14770899713039398, 0.09631700068712234)
+    base_position: [1.05, 0.0, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+  
+  obs7:
+    name: "sugar"
+    urdf_path: "objects/ycb/004_sugar_box/model.urdf"
+    collision_path: "objects/ycb/004_sugar_box/textured_simple_vhacd.obj"
+    bbox: (-0.024365000426769257, 0.026173999533057213, -0.04887399822473526, 0.046105001121759415, -0.0928020030260086, 0.08408500254154205)
+    base_position: [0.93, 0.1, 0.57]
+    base_orientation: [ 0, 0, 0, 1 ]
+    global_scaling: 1.0
+
+
+tacto:
+  width: 240
+  height: 320
+  visualize_gui: True
+
+franka_gripper:
+    urdf_path: "robots/panda/panda_digit_gripper.urdf"
+    use_fixed_base: True
+    base_position: [0.1, 0.0, 0.05]
+  # init_state:
+  #   end_effector:
+  #     # position: [0.50, 0, 0.164]
+  #     # position: [0.5, 0.2, 0.35]
+  #     position: [0.5, 0.0, 0.35]
+  #     # p.getQuaternionFromEuler([0, np.pi, 0])
+  #     orientation: [1.0, 0.0, 0.0, 0.0]
+  #   gripper_width: 0.01
+
+# pybullet_camera:
+#   cameraDistance: 1.00
+#   cameraYaw: -486.60
+#   cameraPitch: -7.20
+#   cameraTargetPosition: [1.18, -0.13, 0.44]
+
+pybullet_camera:
+  cameraDistance: 1.20
+  cameraYaw: -457.00
+  cameraPitch: -14.0
+  cameraTargetPosition: [1.74, -0.02, 0.45]
