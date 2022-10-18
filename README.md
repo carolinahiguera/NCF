@@ -1,7 +1,7 @@
 # Neural Contact Fields (NCF)
 
 <p align="center">
-    <a href="">Paper</a> |
+    <a href="https://arxiv.org/abs/2210.09297">Paper</a> |
     <a href="https://youtu.be/krIpzZrWQLM">Video</a>
 </p>
 
@@ -115,6 +115,13 @@ In `./ncf/train.py` you can set some NCF parameters, such as:
 - Batch size
 
 ## Citing
+If you use this paper for your research or find this code useful, please cite our paper:
+@article{higuera2022neural,
+      title={Neural Contact Fields: Tracking Extrinsic Contact with Tactile Sensing}, 
+      author={Carolina Higuera and Siyuan Dong and Byron Boots and Mustafa Mukadam},
+      journal={arXiv preprint arXiv:2210.09297},
+      year={2022}
+}
 
 ## Acknowledgements
 
